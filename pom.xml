@@ -136,7 +136,11 @@
 			<artifactId>cglib</artifactId>
 			<version>2.2.2</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>0.2.9</version>
+		</dependency>
 		<!-- 标签 -->
 		<dependency>
 			<groupId>jstl</groupId>
