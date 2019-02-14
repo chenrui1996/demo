@@ -13,21 +13,22 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 	<!--开启注解扫描扫描业务层包以及子包 -->
+	<!-- 在xml配置了这个标签后，spring可以自动去扫描base-pack下面或者子包下面的java文件，如果扫描到有@Component 
+		@Controller@Service等这些注解的类，则把这些类注册为bean -->
 	<context:component-scan
-		base-package="com.qcit.service*"></context:component-scan>
+		base-package="com.suray.service*"></context:component-scan>
 	<!--配置注解注入配置文件 可以通过@Value("${key}")的方式注入到javabean属性中 -->
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
-				<value>classpath:imageconfig.properties</value>
+				<!-- <value>classpath:imageconfig.properties</value> -->
 				<value>classpath:db.properties</value>
-				<value>classpath:upload.properties</value>
+				<!-- <value>classpath:upload.properties</value> -->
 			</list>
 		</property>
 		<!--在容器中装载工具类 -->
 	</bean>
-	<bean id="imageCodeUtil" class="com.qcit.util.ImageCodeUtil"
-		name="imageCodeUtil" />
-	<bean id="fileUtil" class="com.qcit.util.FileUtil" name="fileUtil" />
+	<!-- <bean id="imageCodeUtil" class="com.qcit.util.ImageCodeUtil" name="imageCodeUtil" 
+		/> <bean id="fileUtil" class="com.qcit.util.FileUtil" name="fileUtil" /> -->
 </beans>
