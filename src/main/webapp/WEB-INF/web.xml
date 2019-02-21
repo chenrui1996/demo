@@ -4,7 +4,7 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener
 		</listener-class>
 	</listener>
-	
+
 	<!--配置spring配置文件路径 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -14,7 +14,7 @@
 			classpath:applicationContext-servlet.xml;
 		</param-value>
 	</context-param>
-	
+
 	<!--配置servlet不拦截以下静态资源 -->
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
@@ -36,12 +36,12 @@
 		<servlet-name>default</servlet-name>
 		<url-pattern>/image/*</url-pattern>
 	</servlet-mapping>
-	
+
 	<!--配置springmvc前端控制器 -->
+	<!-- 将所有 -->
 	<servlet>
 		<servlet-name>mvc</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet
-		</servlet-class>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<!--配置springmvc配置文件路径 -->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>

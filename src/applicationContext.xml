@@ -29,6 +29,9 @@
 		</property>
 		<!--在容器中装载工具类 -->
 	</bean>
+	
+	    <!-- 开启注解 -->
+    <context:annotation-config />
 	<!-- <bean id="imageCodeUtil" class="com.qcit.util.ImageCodeUtil" name="imageCodeUtil" 
 		/> <bean id="fileUtil" class="com.qcit.util.FileUtil" name="fileUtil" /> -->
 </beans>
