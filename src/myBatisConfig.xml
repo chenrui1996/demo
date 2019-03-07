@@ -3,13 +3,13 @@
     "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.qcit.model.User" alias="user" />
-		<typeAlias type="com.qcit.model.ItemsListVo"
+		<typeAlias type="com.suray.model.User" alias="user" />
+		<typeAlias type="com.suray.model.ItemsListVo"
 			alias="itemslistvo" />
-		<typeAlias type="com.qcit.model.ItemsPo" alias="itemspo" />
-		<typeAlias type="com.qcit.model.UserLoginSimple"
+		<typeAlias type="com.suray.model.ItemsPo" alias="itemspo" />
+		<typeAlias type="com.suray.model.UserLoginSimple"
 			alias="userloginsimple" />
-		<typeAlias type="com.qcit.model.ProblemCount"
+		<typeAlias type="com.suray.model.ProblemCount"
 			alias="problemcount" />
 	</typeAliases>
 </configuration>  
